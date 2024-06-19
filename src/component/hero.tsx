@@ -12,7 +12,7 @@ import { useEffect, useState, useRef } from "react";
 export default function Hero() {
   const [opacity, setOpacity] = useState(0);
   const ref = useRef(null);
-  const { scrollY } = useScroll(ref);
+  const { scrollY } = useScroll({ target: ref });
 
   useEffect(() => {
     animate("li", { opacity: 1 }, { delay: stagger(0.2, { startDelay: 1.5 }) });

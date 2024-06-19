@@ -30,7 +30,7 @@ function useIsChildInCenter(
     };
 
     const observer = new IntersectionObserver(
-      ([entry]) => {
+      () => {
         checkIfInCenter();
       },
       {
