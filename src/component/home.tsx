@@ -14,7 +14,7 @@ import { IoTerminalSharp, IoColorPalette } from "react-icons/io5";
 
 export default function Home() {
   useEffect(() => {
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   return (
